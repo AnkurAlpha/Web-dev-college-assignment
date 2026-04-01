@@ -1,16 +1,60 @@
-# React + Vite
+# Web Dev College Assignment - React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 1. Explore Advanced React Hooks
 
-Currently, two official plugins are available:
+### Requirements
+- Implement `useContext` for theme switching (Light/Dark)
+- Implement `useReducer` for managing complex state (Todo list)
+- Create a global theme provider
+- Use centralized state and cleaner state logic
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Implemented
+- Added a global `ThemeProvider` using `useContext` for light/dark theme switching
+- Added a `ThemeToggle` button in the Navbar
+- Added a Todo app managed with `useReducer` with:
+  - Add todo
+  - Toggle todo
+  - Delete todo
 
-## React Compiler
+## 2. Implement Navigation in a React Application
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Requirements
+- Install React Router
+- Create pages:
+  - Home
+  - About
+  - Contact
+- Add navigation bar
+- Implement dynamic routing (e.g., `/user/:id`)
+- Implement a 404 page
+- Multi-page navigation within a single-page application
 
-## Expanding the ESLint configuration
+### Implemented
+- Set up `react-router-dom`
+- Added routes/pages:
+  - `/` -> Home
+  - `/about` -> About
+  - `/contact` -> Contact
+  - `/user/:username` -> Dynamic User route
+  - `*` -> NotFound (404)
+- Added a shared Navbar for navigation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 3. Deploy a React Application
+
+### Requirements
+- Build the project:
+  - `npm run build`
+- Deploy using:
+  - Netlify / Vercel / GitHub Pages
+- Share live URL
+
+### Build Command
+```bash
+npm run build
+```
+
+### Deployment Platform
+- GitHub Pages (or Netlify/Vercel)
+
+### Live URL
+- Add your deployed app URL here: `https://<your-live-url>`
