@@ -23,6 +23,16 @@
   border-color: var(--accent-border);
 }
 
+.theme-toggle {
+  color: var(--text-h);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 0.9rem;
+  background: var(--bg);
+  cursor: pointer;
+  font: inherit;
+}
+
 .content {
   display: grid;
   place-items: center;

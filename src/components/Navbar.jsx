@@ -1,9 +1,12 @@
 import { NavLink } from 'react-router-dom'
+import { useTheme } from '../context/ThemeContext'
 
 const getNavClass = ({ isActive }) =>
   isActive ? 'nav-link nav-link-active' : 'nav-link'
 
 function Navbar() {
+  const { theme, toggleTheme } = useTheme()
+
   return (
     <header className="site-header">
       <nav className="navbar" aria-label="Main navigation">
@@ -19,6 +22,14 @@ function Navbar() {
         <NavLink to="/user/guest" className={getNavClass}>
           User
         </NavLink>
+        <button
+          type="button"
+          className="theme-toggle"
+          onClick={toggleTheme}
+          aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} theme`}
+        >
+          {theme === 'light' ? 'Dark mode' : 'Light mode'}
+        </button>
       </nav>
     </header>
   )
