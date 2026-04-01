@@ -1,0 +1,45 @@
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-h);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 0.9rem;
+}
+
+.nav-link-active {
+  background: var(--accent-bg);
+  border-color: var(--accent-border);
+}
+
+.content {
+  display: grid;
+  place-items: center;
+  padding: 2rem 1rem;
+  flex: 1;
+}
+
+.page {
+  max-width: 680px;
+}
+
+.page h1 {
+  margin-top: 0;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--accent);
+}
