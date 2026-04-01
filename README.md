@@ -57,4 +57,4 @@ npm run build
 - GitHub Pages (or Netlify/Vercel)
 
 ### Live URL
-- Add your deployed app URL here: `https://<your-live-url>`
+- `https://web-dev-college-assignment.vercel.app`
